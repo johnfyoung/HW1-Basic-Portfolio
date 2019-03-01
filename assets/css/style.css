@@ -71,6 +71,10 @@ footer {
     color: #fff;
 }
 
+.copyright {
+    font-size:.8rem;
+}
+
 .clearfix::after {
     content: "";
     display: block;
