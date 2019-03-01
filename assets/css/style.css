@@ -121,7 +121,9 @@ textarea {
 }
 
 textarea {
-    border-color: #ccc;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
 }
 
 textarea::placeholder {
