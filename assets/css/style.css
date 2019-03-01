@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+h1 {
+    color: #4aaaa5;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.2rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #8d7777;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2rem;
+}
+
+main {
+    background: #f2f2f2 url("../images/background.png") repeat;
+}
+
+header {
+    background: #fff;
+    border-bottom: 1px solid #777;
+    box-shadow: 2px 2px 5px #777;
+}
+
+main {
+    padding: 20px 0px;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+nav ul li a.nav-link {
+    display: block;
+    padding:30px 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #777;
+}
+
+nav ul li:not(:last-of-type) a.nav-link::after {
+    content: "|";
+    color: #dedede;
+    margin-left: 10px;
+}
+
+footer {
+    background: #666666;
+    padding: 30px 0 5px;
+    text-align: center;
+    border-top: 8px solid #4aaaa5;
+    color: #fff;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.brand {
+    float: left;
+    background: #4aaaa5;
+}
+
+.brand a {
+    display: block;
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    padding:30px 40px;
+    text-decoration: none;
+}
+
+.content { 
+    background: #fff;
+    padding: 20px;
+}
+
+.content hr {
+    height: 3px;
+    background: #ccc;
+    border: none;
+    margin-bottom: 30px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding:5px 15px;
+    width:100%;
+    font-size: .8rem;
+}
+
+textarea {
+    border-color: #ccc;
+}
+
+textarea::placeholder {
+    color:#dddddd;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #4aaaa5;
+    padding: 10px 20px;
+    color:#fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.about .content img {
+    max-width:200px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.portfolio .content ul {
+    padding: 0;
+    margin: 0;
+}
+
+.portfolio .content ul li {
+    padding: 0;
+    margin: 0 40px 0 0;
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+.portfolio .content ul li a {
+    display: block;
+}
+
+.portfolio .content ul li .porfolio-list__item__label {
+    position: absolute;
+    bottom:10%;
+    width:100%;
+    text-align: center;
+    padding: 15px 0;
+    color: #fff;
+    background: #4aaaa5;
+    font-family: 'Times New Roman', Times, serif;
+} 
